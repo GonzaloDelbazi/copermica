@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BaseCrudService } from './services/base-crud-service.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'copermica-task';
+  constructor(public service: BaseCrudService<any>) {
+
+  }
 }
+
